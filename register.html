@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online code editor</title>
+        <style>
+            body{
+                font-family: "Lucida Console", "Courier New", monospace;
+            }
+            #title{
+                margin: auto;
+                text-align: center;
+                padding: 20px;
+                padding-bottom: 20px;
+                background-color: #04AA6D;
+                color: white;
+            }
+            .box{
+                height: 500px;
+                width: 500px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 15px;
+                margin: auto;
+                margin-top: 20px;
+                padding: 20px;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .name{
+                height: 30px;
+                width: 300px;
+                margin: 10px;
+                padding: 10px;
+                font-size: large;
+                text-align: center;
+            }
+            #head{
+                margin-bottom: 40px;
+            }
+            .reg{
+                background-color: #04AA6D;
+                color: aliceblue;
+                padding: 10px 40px;
+                font-size: large;
+                margin: 40px;
+                cursor: pointer;
+            }
+            .reg:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Online Code Editor</h1>
+        <div class="box">
+            <form action="regsuccess.html" class="container">
+                <h1 id="head">Register</h1>
+                <label for="name">Name</label>
+                <input type="name" class="name">
+                <label for="email">Email</label>
+                <input type="email" class="name">
+                <label for="passowrd">Password</label>
+                <input type="password" class="name">
+                <input onclick="location.href = 'regsuccess.html';" type="button" value="Register" class="reg">
+            </form>
+        </div>
+    </body>
+</html>
