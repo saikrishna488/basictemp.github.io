@@ -84,6 +84,41 @@
             #text{
                 margin: 0px 10px;
             }
+            .box{
+                display: flex;
+                flex-direction: row;
+                height: 500px;
+                background-color:black;
+                margin: 20px 20px;
+                width:auto;
+                align-items: flex-start;
+            }
+            .editor{
+                height: 450px;
+                width: 50%;
+                background-color: #1c2130;
+                color: whitesmoke;
+                border: 1px solid white;
+                margin: 50px 20px;
+                padding: 5px;
+                list-style-position: inside;
+                overflow-y: scroll;
+            }
+            #brun{
+                justify-self:center;
+                font-family: "Lucida Console", "Courier New", monospace;
+                margin: 50px 20px;
+                padding: 5px;
+                font-size: large;
+                padding: 10px;
+                background-color: #04AA6D;
+                color:white;
+            }
+            #brun:hover{
+                background-color: white;
+                color: black;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -104,6 +139,13 @@
             </select>
         </div>
         <div class="box">
+            <ol class="editor" contenteditable>
+                <li id="li"> </li>
+            </ol>
+            <input type="button" value="Run" id="brun">
+            <div class="editor" >
+                //output
+            </div>
         </div>
     </body>
 </html>
